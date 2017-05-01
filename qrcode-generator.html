@@ -20,10 +20,6 @@ Example:
       :host {
         display: block;
       }
-      #qrcode img{
-        width: 255px;
-        height: 255px;
-      }
     </style>
 
   <div id="qrcode"></div>
@@ -66,12 +62,10 @@ Example:
       * Make QR Code
       */
       _makeQR() {
-        var width4 = this.width * 4;
-        var height4 = this.height * 4;
         this.settings = {
           text: this.data,
-          width: width4,
-          height: height4,
+          width: this.width,
+          height: this.height,
           colorDark : this.color,
           colorLight : this.background,
           correctLevel : QRCode.CorrectLevel.H
