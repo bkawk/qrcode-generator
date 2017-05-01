@@ -21,7 +21,7 @@ Example:
         display: block;
       }
     </style>
-   
+
   <div id="qrcode"></div>
   </template>
 
@@ -64,8 +64,8 @@ Example:
       _makeQR() {
         this.settings = {
           text: this.data,
-          width: this.width,
-          height: this.height,
+          width: this.width * 2,
+          height: this.height * 2,
           colorDark : this.color,
           colorLight : this.background,
           correctLevel : QRCode.CorrectLevel.H
