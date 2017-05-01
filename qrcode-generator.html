@@ -22,6 +22,7 @@ Example:
       }
       #qrcode img {
         margin: 0 auto;
+        border: 4px solid white;
       }
     </style>
 
@@ -67,8 +68,8 @@ Example:
       _makeQR() {
         this.settings = {
           text: this.data,
-          width: this.width,
-          height: this.height,
+          width: this.width-4,
+          height: this.height-4,
           colorDark : this.color,
           colorLight : this.background,
           correctLevel : QRCode.CorrectLevel.H
